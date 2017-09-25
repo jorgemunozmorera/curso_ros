@@ -1,0 +1,8 @@
+<launch>
+    <node pkg="cv_cam" type="img_transport_camera_node" name="camera_driver">
+        <!-- set private parameters for the node -->
+        <param name="width" value="640" type="int" />
+        <param name="height" value="360" type="int" />
+        <param name="fps" value="20" type="int" />
+    </node>
+</launch>

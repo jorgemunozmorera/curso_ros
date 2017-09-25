@@ -1,0 +1,10 @@
+<launch>
+    <!-- Arguments declaration -->
+    <arg name="width" value="640" />
+    <arg name="height" value="480" />
+    <arg name="fps" value="20" />
+
+    <!-- ROS nodes -->
+    <node pkg="cv_cam" type="ros_camera_node_args" name="camera_driver" args="$(arg width) $(arg height) $(arg fps)" />
+    <node pkg="image_view" type="image_view" name="image_view"/>
+</launch>

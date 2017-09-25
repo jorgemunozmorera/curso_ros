@@ -1,0 +1,10 @@
+<launch>
+
+  <node name="recognizer" pkg="pocketsphinx" type="recognizer.py">
+    <param name="lm" value="$(find speech_recognition)/misc/cmusphinx-es-5.2/etc/lm.sorted"/>
+    <param name="dict" value="$(find speech_recognition)/misc/cmusphinx-es-5.2/etc/voxforge_es_sphinx.dic"/>
+    <param name="hmm" value="$(find speech_recognition)/misc/cmusphinx-es-5.2/model_parameters/voxforge_es_sphinx.cd_ptm_4000/"/>
+  </node>
+
+</launch>
+

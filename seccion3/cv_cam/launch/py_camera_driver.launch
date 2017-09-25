@@ -1,0 +1,9 @@
+<launch>
+    <node pkg="cv_cam" type="py_camera_driver_ros_params.py" name="camera_driver">
+        <!-- set private parameters for the node -->
+        <param name="width" value="800" type="int" />
+        <param name="height" value="600" type="int" />
+        <param name="fps" value="20" type="int" />
+    </node>
+    <node pkg="image_view" type="image_view" name="image_view"/>    
+</launch>

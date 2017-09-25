@@ -1,0 +1,9 @@
+# Define the goal
+turtlesim/Pose goal_pose
+---
+# Define the result
+turtlesim/Pose result_pose
+---
+# Define a feedback message
+turtlesim/Pose current_pose
+

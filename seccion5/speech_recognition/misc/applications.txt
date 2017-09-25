@@ -1,0 +1,9 @@
+explorer
+browser
+terminator
+console
+settings
+cute
+spider
+finish
+

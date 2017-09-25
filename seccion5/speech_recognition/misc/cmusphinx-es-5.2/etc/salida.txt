@@ -1,0 +1,29 @@
+... logging to /home/jorge/.ros/log/e969de26-9862-11e7-b2cb-000c29d1d8d2/roslaunch-ubuntu-7236.log
+Checking log directory for disk usage. This may take awhile.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/home/jorge/catkin_ws/src/speech_recognition/launch/spanish_recognizer.launch
+[1mstarted roslaunch server http://ubuntu:45849/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /recognizer/dict: /home/jorge/catki...
+ * /recognizer/hmm: /home/jorge/catki...
+ * /recognizer/lm: /home/jorge/catki...
+ * /rosdistro: indigo
+ * /rosversion: 1.11.21
+
+NODES
+  /
+    recognizer (pocketsphinx/recognizer.py)
+
+[1mROS_MASTER_URI=http://localhost:11311[0m
+]2;/home/jorge/catkin_ws/src/speech_recognition/launch/spanish_recognizer.launch http://localhost:11311
+core service [/rosout] found
+[1mprocess[recognizer-1]: started with pid [7254][0m
+[recognizer-1] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m

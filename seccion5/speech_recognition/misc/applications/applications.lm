@@ -1,0 +1,57 @@
+Language model created by QuickLM on Mon Sep 11 15:07:37 EDT 2017
+Copyright (c) 1996-2010 Carnegie Mellon University and Alexander I. Rudnicky
+
+The model is in standard ARPA format, designed by Doug Paul while he was at MITRE.
+
+The code that was used to produce this language model is available in Open Source.
+Please visit http://www.speech.cs.cmu.edu/tools/ for more information
+
+The (fixed) discount mass is 0.5. The backoffs are computed using the ratio method.
+This model based on a corpus of 8 sentences and 10 words
+
+\data\
+ngram 1=10
+ngram 2=16
+ngram 3=8
+
+\1-grams:
+-0.7782 </s> -0.3010
+-0.7782 <s> -0.2218
+-1.6812 BROWSER -0.2218
+-1.6812 CONSOLE -0.2218
+-1.6812 CUTE -0.2218
+-1.6812 EXPLORER -0.2218
+-1.6812 FINISH -0.2218
+-1.6812 SETTINGS -0.2218
+-1.6812 SPIDER -0.2218
+-1.6812 TERMINATOR -0.2218
+
+\2-grams:
+-1.2041 <s> BROWSER 0.0000
+-1.2041 <s> CONSOLE 0.0000
+-1.2041 <s> CUTE 0.0000
+-1.2041 <s> EXPLORER 0.0000
+-1.2041 <s> FINISH 0.0000
+-1.2041 <s> SETTINGS 0.0000
+-1.2041 <s> SPIDER 0.0000
+-1.2041 <s> TERMINATOR 0.0000
+-0.3010 BROWSER </s> -0.3010
+-0.3010 CONSOLE </s> -0.3010
+-0.3010 CUTE </s> -0.3010
+-0.3010 EXPLORER </s> -0.3010
+-0.3010 FINISH </s> -0.3010
+-0.3010 SETTINGS </s> -0.3010
+-0.3010 SPIDER </s> -0.3010
+-0.3010 TERMINATOR </s> -0.3010
+
+\3-grams:
+-0.3010 <s> BROWSER </s>
+-0.3010 <s> CONSOLE </s>
+-0.3010 <s> CUTE </s>
+-0.3010 <s> EXPLORER </s>
+-0.3010 <s> FINISH </s>
+-0.3010 <s> SETTINGS </s>
+-0.3010 <s> SPIDER </s>
+-0.3010 <s> TERMINATOR </s>
+
+\end\

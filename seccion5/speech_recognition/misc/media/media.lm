@@ -1,0 +1,53 @@
+Language model created by QuickLM on Mon Sep 11 16:44:43 EDT 2017
+Copyright (c) 1996-2010 Carnegie Mellon University and Alexander I. Rudnicky
+
+The model is in standard ARPA format, designed by Doug Paul while he was at MITRE.
+
+The code that was used to produce this language model is available in Open Source.
+Please visit http://www.speech.cs.cmu.edu/tools/ for more information
+
+The (fixed) discount mass is 0.5. The backoffs are computed using the ratio method.
+This model based on a corpus of 7 sentences and 9 words
+
+\data\
+ngram 1=9
+ngram 2=14
+ngram 3=7
+
+\1-grams:
+-0.7782 </s> -0.3010
+-0.7782 <s> -0.2218
+-1.6232 DOWN -0.2218
+-1.6232 MUSIC -0.2218
+-1.6232 NEWS -0.2218
+-1.6232 NEXT -0.2218
+-1.6232 PREVIOUS -0.2218
+-1.6232 SHOPPING -0.2218
+-1.6232 UP -0.2218
+
+\2-grams:
+-1.1461 <s> DOWN 0.0000
+-1.1461 <s> MUSIC 0.0000
+-1.1461 <s> NEWS 0.0000
+-1.1461 <s> NEXT 0.0000
+-1.1461 <s> PREVIOUS 0.0000
+-1.1461 <s> SHOPPING 0.0000
+-1.1461 <s> UP 0.0000
+-0.3010 DOWN </s> -0.3010
+-0.3010 MUSIC </s> -0.3010
+-0.3010 NEWS </s> -0.3010
+-0.3010 NEXT </s> -0.3010
+-0.3010 PREVIOUS </s> -0.3010
+-0.3010 SHOPPING </s> -0.3010
+-0.3010 UP </s> -0.3010
+
+\3-grams:
+-0.3010 <s> DOWN </s>
+-0.3010 <s> MUSIC </s>
+-0.3010 <s> NEWS </s>
+-0.3010 <s> NEXT </s>
+-0.3010 <s> PREVIOUS </s>
+-0.3010 <s> SHOPPING </s>
+-0.3010 <s> UP </s>
+
+\end\

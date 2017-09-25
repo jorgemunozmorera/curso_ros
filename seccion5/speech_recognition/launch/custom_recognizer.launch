@@ -1,0 +1,9 @@
+<launch>
+
+  <node name="recognizer" pkg="pocketsphinx" type="recognizer.py">
+    <param name="lm" value="$(find speech_recognition)/misc/TAR6972/6972.lm"/>
+    <param name="dict" value="$(find speech_recognition)/misc/TAR6972/6972.dic"/>
+  </node>
+
+</launch>
+

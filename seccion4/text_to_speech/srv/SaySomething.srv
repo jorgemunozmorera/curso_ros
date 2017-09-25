@@ -1,0 +1,6 @@
+# Request section of the message
+string phrase # the phrase to say
+string voice  # the language voice to use
+---
+# Response section of the message
+duration data # an estimation of the time needed to say the phrase
