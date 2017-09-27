@@ -6,8 +6,8 @@ from custom_pub_sub.msg import Memory
 import re
 
 def talker():
-    pub = rospy.Publisher('memory', Memory, queue_size=1000)
-    rospy.init_node('memory_publisher', anonymous=True)
+    rospy.init_node('memory_publisher', anonymous=True)    
+    pub = rospy.Publisher('memory', Memory, queue_size=1000)    
     rate = rospy.Rate(1) # 1 Hz
     counter = 0
     msg = Memory()

@@ -8,8 +8,8 @@ from std_msgs.msg import Float64
 import re
 
 def memory_publisher():
-    pub = rospy.Publisher('memory', Float64, queue_size=1000) # (topic name, message type, queue size)
-    rospy.init_node('memory_publisher', anonymous=True) # (node name, set unique name)
+    rospy.init_node('memory_publisher', anonymous=True) # (node name, set unique name)    
+    pub = rospy.Publisher('memory', Float64, queue_size=1000) # (topic name, message type, queue size)    
     rate = rospy.Rate(1) # 1 Hz
     msg = Float64(0.0)
     while not rospy.is_shutdown(): # returns true if CTRL+C
