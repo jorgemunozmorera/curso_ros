@@ -6,18 +6,15 @@
 #include <sensor_msgs/image_encodings.h>
 #include <sensor_msgs/Image.h>
 
-void get_param(ros::NodeHandle& nh, const char* name, int& value, int default_value);
-
 int main(int argc, char** argv)
 {
     ros::init(argc, argv, "camera_driver");
     int width, height, fps;
-    ros::NodeHandle _nh("~"); // We need an additional NodeHandle to access private parameters.
     ros::NodeHandle nh;
     // Recover private parameters from the launch file
-    get_param(_nh, "width", width, 640); // In C++ we don't need the '~' char, we used it to create the NodeHandle.
-    get_param(_nh, "height", height, 360);
-    get_param(_nh, "fps", fps, 20);
+    ros::param::param<int>("~width", width, 640); // We still need the '~' character.
+    ros::param::param<int>("~height", height, 360);
+    ros::param::param<int>("~fps", fps, 20);
     // Open the default camera. 0 stands for /dev/video0
     cv::VideoCapture cap;    
     if(!cap.open(0))
@@ -47,16 +44,6 @@ int main(int argc, char** argv)
     return 0;
 }
 
-void get_param(ros::NodeHandle& nh, const char* name, int& value, int default_value)
-{
-    if (nh.hasParam(name))
-    {
-        nh.getParam(name, value);
-    } else 
-    {
-        ROS_WARN("Param '%s' not found. Using default value.", name);
-        value = default_value;
-    }
-}
+
 
 

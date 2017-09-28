@@ -2,20 +2,14 @@
 import cv2
 import rospy
 from sensor_msgs.msg import Image
-from cv_bridge import CvBridge, CvBridgeError
-
-def get_param(name, default_value):
-    if not rospy.has_param(name):
-        rospy.logwarn("Param '%s' not found. Using default value.", name)    
-    value = rospy.get_param(name, default_value) # We can give a default value if param does not exists
-    return value        
+from cv_bridge import CvBridge, CvBridgeError  
 
 def main():
     rospy.init_node('camera_driver', anonymous=True)    
     # Recover private parameters from the launch file
-    width = get_param('~width', 640) # We must put a '~' char before the param name
-    height = get_param('~height', 360)
-    fps = get_param('~fps', 20)
+    width = rospy.get_param('~width', 640) # We must put a '~' char before the param name
+    height = rospy.get_param('~height', 360) # The second argument is used as default if param does not exists
+    fps = rospy.get_param('~fps', 20)
     # Open the default camera. 0 stands for /dev/video0
     cap = cv2.VideoCapture(0)
     cap.set(cv2.CAP_PROP_FRAME_WIDTH, width);
@@ -37,4 +31,3 @@ if __name__ == '__main__':
         main()
     except rospy.ROSInterruptException:
         pass
-
