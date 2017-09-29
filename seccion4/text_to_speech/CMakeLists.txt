@@ -46,28 +46,28 @@ include_directories(
 ##################
 
 ## Declare a C++ executable
-add_executable(${PROJECT_NAME}_server_node src/speaker_node.cpp)
+#add_executable(${PROJECT_NAME}_server_node src/speaker_node.cpp)
 ## Rename C++ executable without prefix
-set_target_properties(${PROJECT_NAME}_server_node PROPERTIES OUTPUT_NAME server_node PREFIX "")
+#set_target_properties(${PROJECT_NAME}_server_node PROPERTIES OUTPUT_NAME server_node PREFIX "")
 ## Add cmake target dependencies of the executable
-add_dependencies(${PROJECT_NAME}_server_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+#add_dependencies(${PROJECT_NAME}_server_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 ## Specify libraries to link a library or executable target against
- target_link_libraries(${PROJECT_NAME}_server_node
-   ${catkin_LIBRARIES}
-)
+# target_link_libraries(${PROJECT_NAME}_server_node
+#   ${catkin_LIBRARIES}
+#)
 
 ##################
 ##  TEST NODE   ##
 ##################
 
 ## Declare a C++ executable
-add_executable(${PROJECT_NAME}_test_node src/test_node.cpp)
+#add_executable(${PROJECT_NAME}_test_node src/test_node.cpp)
 ## Rename C++ executable without prefix
-set_target_properties(${PROJECT_NAME}_test_node PROPERTIES OUTPUT_NAME test_node PREFIX "")
+#set_target_properties(${PROJECT_NAME}_test_node PROPERTIES OUTPUT_NAME test_node PREFIX "")
 ## Add cmake target dependencies of the executable
-add_dependencies(${PROJECT_NAME}_test_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+#add_dependencies(${PROJECT_NAME}_test_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 ## Specify libraries to link a library or executable target against
- target_link_libraries(${PROJECT_NAME}_test_node
-   ${catkin_LIBRARIES}
-)
+# target_link_libraries(${PROJECT_NAME}_test_node
+#   ${catkin_LIBRARIES}
+#)
 
